@@ -1,0 +1,25 @@
+.address {
+    font-style: normal;
+    line-height: 1.5;
+
+   
+
+    &__list :not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+      
+        color: var(--footer-translucent-text);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--dominant-color);
+    }
+
+    &__link--white {
+        color: var(--white-dominant-color);
+    }
+}

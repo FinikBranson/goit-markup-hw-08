@@ -1,0 +1,33 @@
+.benefits {
+
+   
+
+    &__list {
+       
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 270px;
+    }
+
+    &__decoration {
+        @extend %flex-centered;
+        margin-bottom: 30px;
+        background-color: var(--team-section-background);
+        border-radius: 4px;
+        height: 120px;
+    }
+
+    &__sub-title {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        line-height: 1.71;
+        letter-spacing: 0.04;
+        color: var(--text-color);
+    }
+
+}

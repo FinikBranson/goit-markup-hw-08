@@ -1,0 +1,36 @@
+.header {
+    border-bottom: 1px solid #ececec;
+
+    &__container,
+    &__nav-inner,
+    &__contacts-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__logo {
+        padding-top: 24px;
+        margin-right: 93px;
+        padding-bottom: 24px;
+
+        @extend .logo;
+
+        color: var(--black-dominant-theme);
+
+    }
+
+
+    .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 31px;
+    }
+}
+
+
+
+
+

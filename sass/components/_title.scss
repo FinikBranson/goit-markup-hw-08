@@ -1,0 +1,32 @@
+// hero-title
+
+.main-title {
+    display: block;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+// section-title
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.sub-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+&--little-white {
+    font-size: 14px;    
+    color: var(--white-dominant-color);
+    }
+}
+
+
