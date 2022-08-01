@@ -21,39 +21,59 @@
     <header class="header">
       <div class="header__container container">
         <nav class="header__nav-inner">
+
           <!-- logo -->
+
           <a class="header__logo " href="./index.html"><span class="logo--accent">Web</span>Studio</a>
 
-          <!-- site page navigation -->
-          <ul class="page-nav">
-            <li class="page-nav__item">
-              <a class="page-nav__link page-nav__link--current" href="./index.html">Студия</a>
+          <!-- button-menu -->
+
+          <button class="header__button-menu button-menu" 
+          type="button" 
+          aria-label="вызов мобильного меню"
+          aria-expanded="fulse" 
+          data-menu-button> 
+            
+            
+            <svg width="40" height="40">
+            <use class="button-menu__open" href="./images/icons.svg#phone-menu-open"></use>
+            <use class="button-menu__close" href="./images/icons.svg#phone-menu-close"></use>
+          </svg>
+          </button>
+
+
+         
+
+        
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="./index.html">Студия</a>
             </li>
 
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="./portfolio.html">Портфолио</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./portfolio.html">Портфолио</a>
             </li>
 
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="">Контакты</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <!-- contact navigation -->
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+      
+        <ul class="header__contacts-list">
+          <li class="heasder__contacts-item">
+            <a class="contacts-link" href="mailto:info@devstudio.com">
+              <svg class="header__contacts-icon contacts-link__icon-mail">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111"
-              ><svg class="contacts__icon" width="14" height="16">
+          <li class="heasder__contacts-item">
+            <a class="heasder__contacts-link contacts-link" href="tel:+380961111111"
+              ><svg class="header__contacts-icon contacts-link__icon-tel">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -66,16 +86,16 @@
     <main>
       <!--hero section  -->
 
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero__title main-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
       <!-- benefits section -->
 
-      <section class="benefits section">
+      <!-- <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden section-title">наши преимущества</h2>
 
@@ -129,11 +149,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--activities section-->
 
-      <section class="activities section">
+      <!-- <section class="activities section">
         <div class="container">
           <h2 class="activities__title section-title">Чем мы занимаемся</h2>
           <ul class="activities__list">
@@ -174,11 +194,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--section about the team -->
 
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__title section-title">Наша команда</h2>
         
@@ -189,7 +209,7 @@
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__position" lang="en">Product Designer</p>
 
-        <!-- socials-network-set -->
+
 
                 <ul class="socials-network-set">
                   <li class="socials-network-set__item">
@@ -337,11 +357,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section clients -->
 
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title section-title">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -389,11 +409,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
-      <!-- how to find us section -->
+    <!-- <footer class="footer">
+    
       <div class="container footer__inner">
         <div class="footer__contacts-inner">
           <a class="footer__logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
@@ -410,7 +430,7 @@
                 >
               </li>
 
-              <!-- contacts navigation -->
+          
 
               <li>
                 <a class="address__link" href="mailto:info@devstudio.com"
@@ -479,8 +499,11 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
+
+
+<!-- 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn-close" type="button" data-modal-close>
@@ -557,7 +580,10 @@
           <button class="modal__btn-submit button" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
+
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

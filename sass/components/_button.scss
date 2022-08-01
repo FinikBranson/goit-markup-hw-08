@@ -47,5 +47,25 @@
     &__filter-btn--active {
     background: var(--dominant-color);
     color: var(--white-dominant-color);
+    }
 }
+
+// кнопка мобильного меню
+
+.button-menu {
+    border: none;
+    background-color: transparent;
+
+    &__close {
+            display: none;
+    }
+    
+        &.is-open &__close {
+            display: block;
+    }
+
+    &.is-open &__open {
+            display: none;
+    }
 }
+
