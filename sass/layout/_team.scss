@@ -2,8 +2,9 @@
 
     background-color: var(--team-section-background);
 
+
     &__title {
-        @extend .section-title;
+        @extend .section-title-mobile;
         margin-bottom: 30px;
         text-align: center;
     }
