@@ -1,14 +1,14 @@
-.socials-network-set {
+.team {
 
-      
+      &__socials-network-list{
         display: flex;
         justify-content: center;
-
-    &__item:not(:last-child) {
+    }
+    &__socials-network-item:not(:last-child) {
         margin-right: 10px;
     }
 
-    &__link {
+    &__socials-network-link {
        
         @extend %flex-centered;
         width: 44px;
@@ -19,13 +19,8 @@
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__link--light {
-        fill: var(--white-dominant-color);
-        background-color: var(--footer-socials-backgraund);
-    }
-
-    &__link:hover,
-    &__link:focus {
+    &__socials-network-link:hover,
+    &__socials-network-link:focus {
         background-color: var(--dominant-color);
         border-radius: 50%;
         fill: var(--white-dominant-color);

@@ -1,15 +1,25 @@
 .benefits {
-
-   
-
     &__list {
-       
+       @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+       }
     }
     
     &__item {
+        @media (max-width: 767px) {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 30px;  
+        }
+
+        @media (min-width:768px) {
+        width: 354px;    
+        }
           
+        @media (min-width:1200px) {
+        width: 270px;    
+        }
     }
 
     &__decoration {

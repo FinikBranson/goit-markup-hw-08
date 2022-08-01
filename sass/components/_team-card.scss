@@ -4,17 +4,16 @@
     background: var(--white-dominant-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+
     }
 
     &__photo {
-        width: 100%;
-        
+   width: 100%;
     }
-
-
+    
     &__thumb {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 24px;
     }
 
     &__name {
@@ -23,8 +22,6 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
-
-      
     }
 
     &__position {

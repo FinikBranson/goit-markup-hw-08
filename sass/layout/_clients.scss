@@ -1,16 +1,14 @@
 .clients {
 
-    &__item {
-        display: flex;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    &__title {
+        // @extend .section-title-mobile;
+        text-align: center;
     }
 
     &__list {
-      
         display: flex;
+        flex-wrap: wrap;
+       gap: 30px;
     }
 }
 

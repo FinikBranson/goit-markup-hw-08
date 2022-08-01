@@ -203,12 +203,16 @@
               <img
                 class="team__photo"
                 srcset="
-                  ./images/team-photo/mobile-photo-1-@1x.jpg 1x,
-                  ./images/team-photo/mobile-photo-1-@2x.jpg 2x
+                  ./images/team-photo/mobile-photo-1-@1x.jpg  450w,
+                  ./images/team-photo/mobile-photo-1-@2x.jpg  900w,
+                  ./images/team-photo/tablet-photo-1-@1x.jpg  354w,
+                  ./images/team-photo/tablet-photo-1-@2x.jpg  708w,
+                  ./images/team-photo/desktop-photo-1-@1x.jpg 270w,
+                  ./images/team-photo/desktop-photo-1-@2x.jpg 540w
                 "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
                 src="./images/team-photo/mobile-photo-1-@1x.jpg"
                 alt="первый участник команды"
-                width="450"
               />
               <div class="team__thumb">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -250,9 +254,17 @@
             <li class="team__card">
               <img
                 class="team__photo"
-                src="./images/team-photo-2.jpg"
+                srcset="
+                  ./images/team-photo/mobile-photo-2-@1x.jpg  450w,
+                  ./images/team-photo/mobile-photo-2-@2x.jpg  900w,
+                  ./images/team-photo/tablet-photo-2-@1x.jpg  354w,
+                  ./images/team-photo/tablet-photo-2-@2x.jpg  708w,
+                  ./images/team-photo/desktop-photo-2-@1x.jpg 270w,
+                  ./images/team-photo/desktop-photo-2-@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
+                src="./images/team-photo/mobile-photo-2-@1x.jpg"
                 alt="второй участник команды"
-                width="270"
               />
               <div class="team__thumb">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -292,9 +304,17 @@
             <li class="team__card">
               <img
                 class="team__photo"
-                src="./images/team-photo-3.jpg"
+                srcset="
+                  ./images/team-photo/mobile-photo-3-@1x.jpg  450w,
+                  ./images/team-photo/mobile-photo-3-@2x.jpg  900w,
+                  ./images/team-photo/tablet-photo-3-@1x.jpg  354w,
+                  ./images/team-photo/tablet-photo-3-@2x.jpg  708w,
+                  ./images/team-photo/desktop-photo-3-@1x.jpg 270w,
+                  ./images/team-photo/desktop-photo-3-@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
+                src="./images/team-photo/mobile-photo-3-@1x.jpg"
                 alt="третий участник команды"
-                width="270"
               />
               <div class="team__thumb">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -335,9 +355,17 @@
             <li class="team__card">
               <img
                 class="team__photo"
-                src="./images/team-photo-4.jpg"
+                srcset="
+                  ./images/team-photo/mobile-photo-4-@1x.jpg   450w,
+                  ./images/team-photo/mobile-photo-4-@2x.jpg   900w,
+                  ./images/team-photo/tablet-photo-4-@1x.jpg   354w,
+                  ./images/team-photo/tablet-photo-4-@2x.jpg   708w,
+                  ./images/team-photo/desktop-photo-24-@1x.jpg 270w,
+                  ./images/team-photo/desktop-photo-24-@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px"
+                src="./images/team-photo/mobile-photo-4-@1x.jpg"
                 alt="четвертый участник команды"
-                width="270"
               />
               <div class="team__thumb">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -382,7 +410,7 @@
 
       <section class="clients section">
         <div class="container">
-          <h2 class="clients__title section-title">Постоянные клиенты</h2>
+          <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
             <li class="clients__item clients-card">
               <a class="clients-card__link" href="">
@@ -431,7 +459,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__contacts-inner">
           <a class="footer__logo" href="./index.html"
@@ -517,9 +545,9 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn-close" type="button" data-modal-close>
           <svg class="modal__btn-icon" width="18" height="18">
@@ -598,6 +626,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/menu.js"></script> -->
   </body>
 </html>
