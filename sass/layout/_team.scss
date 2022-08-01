@@ -1,9 +1,15 @@
 .team {
 
-        background-color: var(--team-section-background);
+    background-color: var(--team-section-background);
+
+    &__title {
+        @extend .section-title;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 
     &__list {
-        display: flex;
-        justify-content: space-between;
+   
+
     }
 }

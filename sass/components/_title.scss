@@ -10,10 +10,11 @@
 // section-title
 
 .section-title {
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.16;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    color: var(--title-color);
 }
 
 .sub-title {
