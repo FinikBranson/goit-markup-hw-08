@@ -112,7 +112,7 @@ a {
   color: var(--title-color);
 }
 
-.activities__sub-title, .benefits__decoration, .modal__checkbox-label, .modal__btn-close, .clients-card__link, .team__socials-network-link {
+.activities__sub-title, .benefits__decoration, .modal__checkbox-label, .modal__btn-close, .clients-card__link, .socials-network__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,6 +129,12 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
+}
+@media (min-width: 1200px) {
+  .logo, .footer__logo, .header__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo--accent {
   color: var(--dominant-color);
@@ -310,7 +316,7 @@ a {
   color: var(--text-color);
 }
 
-.team__socials-network-list {
+.socials-network {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,10 +324,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.team__socials-network-item:not(:last-child) {
+.socials-network__item:not(:last-child) {
   margin-right: 10px;
 }
-.team__socials-network-link {
+.socials-network__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -329,7 +335,11 @@ a {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team__socials-network-link:hover, .team__socials-network-link:focus {
+.socials-network__link--white {
+  background-color: var(--footer-socials-backgraund);
+  fill: var(--white-dominant-color);
+}
+.socials-network__link:hover, .socials-network__link:focus {
   background-color: var(--dominant-color);
   border-radius: 50%;
   fill: var(--white-dominant-color);
@@ -383,6 +393,7 @@ a {
 .subscription__label {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
 .subscription__input {
   margin-right: 12px;
@@ -935,10 +946,13 @@ a {
   padding-bottom: 60px;
   background-color: var(--footer-backgraund);
 }
+.footer .socials-network {
+  margin-bottom: 60px;
+}
 .footer__logo {
-  color: var(--white-dominant-color);
-  text-align: center;
   margin-bottom: 20px;
+  text-align: center;
+  color: var(--white-dominant-color);
 }
 .footer__socials-inner .sub-title {
   margin-bottom: 20px;

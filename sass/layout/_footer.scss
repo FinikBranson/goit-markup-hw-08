@@ -1,29 +1,24 @@
-
-
 .footer {
+    
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-backgraund);
 
+    .socials-network {
+    margin-bottom: 60px;    
+    }
+
+
     &__logo {
            
         @extend .logo;
-        color: var(--white-dominant-color);
-        text-align: center;
         margin-bottom: 20px;
-
-    }
-
-    &__inner {
-      
-    }
-    
-    &__contacts-inner {
+        text-align: center;
+        color: var(--white-dominant-color);
         
     }
 
     &__socials-inner {
-        
         
         .sub-title {
         margin-bottom: 20px;

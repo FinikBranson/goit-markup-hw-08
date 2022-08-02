@@ -4,6 +4,11 @@
     font-size: 24px;
     line-height: 1.16;
 
+    @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    }
+    
     &--accent {
         color: var(--dominant-color);
     }
