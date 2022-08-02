@@ -3,8 +3,6 @@
     &__link {
 
         @extend %flex-centered;
-
-        // max-width: 210px;
         height: 92px;
         border: 1px solid var(--icon-color);
         border-radius: 4px;

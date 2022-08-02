@@ -6,29 +6,28 @@
     background-color: var(--footer-backgraund);
 
     &__logo {
-            margin-bottom: 20px;
+           
+        @extend .logo;
+        color: var(--white-dominant-color);
+        text-align: center;
+        margin-bottom: 20px;
 
-            @extend .logo;
-            color: var(--white-dominant-color);
+    }
 
-        }
-
-        
-    
     &__inner {
-        display: flex;
-        align-items: baseline;
+      
     }
     
     &__contacts-inner {
-        margin-right: 84px;
+        
     }
 
     &__socials-inner {
-        margin-right: 93px;
+        
         
         .sub-title {
         margin-bottom: 20px;
+        text-align: center;
         }
     }
 

@@ -19,5 +19,7 @@
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
-    ]
+    ],
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500
 }

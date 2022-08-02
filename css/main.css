@@ -191,11 +191,23 @@ a {
   text-transform: uppercase;
 }
 
-.section-title-mobile, .clients__title, .team__title {
+.section-title, .clients__title, .team__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   color: var(--title-color);
+}
+@media (min-width: 1200px) {
+  .section-title, .clients__title, .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.section-title-desktop, .activities__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
 }
 
 .sub-title {
@@ -346,8 +358,12 @@ a {
   font-style: normal;
   line-height: 1.5;
 }
+.address__list {
+  text-align: center;
+  margin-bottom: 60px;
+}
 .address__list :not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .address__link {
   color: var(--footer-translucent-text);
@@ -367,11 +383,6 @@ a {
 .subscription__label {
   display: block;
   margin-bottom: 20px;
-}
-.subscription__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .subscription__input {
   margin-right: 12px;
@@ -840,6 +851,15 @@ a {
   display: none;
   padding-top: 0px;
 }
+@media (min-width: 1200px) {
+  .activities {
+    display: block;
+  }
+}
+.activities__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
 .activities__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -916,25 +936,13 @@ a {
   background-color: var(--footer-backgraund);
 }
 .footer__logo {
-  margin-bottom: 20px;
   color: var(--white-dominant-color);
-}
-.footer__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-.footer__contacts-inner {
-  margin-right: 84px;
-}
-.footer__socials-inner {
-  margin-right: 93px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .footer__socials-inner .sub-title {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .subscription {

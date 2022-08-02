@@ -4,16 +4,16 @@
 
 
     &__title {
-        @extend .section-title-mobile;
+        @extend .section-title;
         margin-bottom: 30px;
         text-align: center;
     }
 
     &__list {
         @media (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
         }
     }
 }
