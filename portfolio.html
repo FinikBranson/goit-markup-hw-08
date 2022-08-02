@@ -22,38 +22,54 @@
       <div class="header__container container">
         <nav class="header__nav-inner">
           <!-- logo -->
-          <a class="header__logo logo" href="./index.html">Web<span class="logo--contrast-black">Studio</span></a>
 
-          <!-- site page navigation -->
-          <ul class="page-nav">
-            <li class="page-nav__item">
-              <a class="page-nav__link " href="./index.html">Студия</a>
+          <a class="header__logo" href="./index.html"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
+
+          <!-- button-menu -->
+
+          <button
+            class="header__button-menu button-menu"
+            type="button"
+            aria-label="вызов мобильного меню"
+            aria-expanded="fulse"
+            data-menu-button
+          >
+            <svg width="40" height="40">
+              <use class="button-menu__open" href="./images/icons.svg#phone-menu-open"></use>
+              <use class="button-menu__close" href="./images/icons.svg#phone-menu-close"></use>
+            </svg>
+          </button>
+
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link " href="./index.html">Студия</a>
             </li>
 
-            <li class="page-nav__item">
-              <a class="page-nav__link page-nav__link--current" href="./portfolio.html">Портфолио</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="./portfolio.html">Портфолио</a>
             </li>
 
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="">Контакты</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <!-- contact navigation -->
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+        <ul class="header__contacts-list">
+          <li class="heasder__contacts-item">
+            <a class="contacts-link" href="mailto:info@devstudio.com">
+              <svg class="header__contacts-icon contacts-link__icon-mail">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111"
-              ><svg class="contacts__icon" width="14" height="16">
+          <li class="heasder__contacts-item">
+            <a class="heasder__contacts-link contacts-link" href="tel:+380961111111"
+              ><svg class="header__contacts-icon contacts-link__icon-tel">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -281,74 +297,75 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <!-- how to find us section -->
+    <footer class="footer section">
       <div class="container footer__inner">
-        <div class="footer__contacts-inner">
-          <a class="footer__logo logo" href="./index.html">Web<span class="logo--contrast-white">Studio</span></a>
-         
-          <address class="footer__address address">
-            <ul class="address__list">
-              <li>
-                <a
-                  class="address__link address__link--white"
-                  href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-
-              <!-- contacts navigation -->
-
-              <li>
-                <a class="address__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-
-              <li>
-                <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-
-        <div class="footer__socials-inner">
-          <h2 class="sub-title sub-title--little-white">присоединяйтесь</h2>
-          <ul class="socials-network-set">
-            <li class="socials-network-set__item">
-              <a class="socials-network-set__link socials-network-set__link--light" href="#"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use></svg
-              ></a>
-            </li>
-            <li class="socials-network-set__item">
-              <a class="socials-network-set__link socials-network-set__link--light" href="#"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-network-set__item">
-              <a class="socials-network-set__link socials-network-set__link--light" href="#"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-network-set__item">
-              <a class="socials-network-set__link socials-network-set__link--light" href="#"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer__contacts-socials-inner">
+          <div class="footer__contacts-inner">
+            <a class="footer__logo" href="./index.html"
+              ><span class="logo--accent">Web</span>Studio</a
+            >
+  
+            <address class="footer__address address">
+              <ul class="address__list">
+                <li>
+                  <a
+                    class="address__link address__link--white"
+                    href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+  
+                <li>
+                  <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+  
+                <li>
+                  <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+  
+          <div class="footer__socials-inner">
+            <h2 class="footer__socials-title ">присоединяйтесь</h2>
+            <ul class="socials-network">
+                    <li class="socials-network__item">
+                      <a class="socials-network__link socials-network__link--white" href="#"
+                        ><svg class="socials-network__icon" width="20" height="20">
+                          <use href="./images/icons.svg#instagram"></use></svg
+                      ></a>
+                    </li>
+                    <li class="socials-network__item">
+                      <a class="socials-network__link socials-network__link--white" href="#">
+                        <svg class="socials-network__icon" width="20" height="20">
+                          <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-network__item">
+                      <a class="socials-network__link socials-network__link--white" href="#">
+                        <svg class="socials-network__icon" width="20" height="20">
+                          <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials-network__item">
+                      <a class="socials-network__link socials-network__link--white" href="#">
+                        <svg class="socials-network__icon" width="20" height="20">
+                          <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+          </div>
         </div>
 
         <form class="subscription" name="subscription-form">
-          <label class="subscription__label sub-title sub-title--little-white " for="user-email">Подпишитесь на рассылку</label>
+          <label class="subscription__label" for="user-email"
+            >Подпишитесь на рассылку</label
+          >
           <div class="subscription__container">
             <input
               class="subscription__input"

@@ -31,6 +31,7 @@
     }
 
     &__sub-title {
+        @extend .sub-title;
         margin-bottom: 10px;
         text-align: center;
     }
