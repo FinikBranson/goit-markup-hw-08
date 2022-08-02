@@ -396,8 +396,8 @@ a {
   text-align: center;
 }
 .subscription__input {
-  margin-right: 12px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid var(--subscription-field-border);
@@ -417,6 +417,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
   padding: 10px 28px 10px 29px;
 }
 .subscription__icon {
@@ -957,47 +958,6 @@ a {
 .footer__socials-inner .sub-title {
   margin-bottom: 20px;
   text-align: center;
-}
-
-.subscription {
-  display: block;
-}
-.subscription__label {
-  display: block;
-  margin-bottom: 20px;
-}
-.subscription__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.subscription__input {
-  margin-right: 12px;
-  width: 358px;
-  height: 50px;
-  padding: 15px 16px;
-  border: 1px solid var(--subscription-field-border);
-  border-radius: 4px;
-  -webkit-filter: drop-shadow(0px 4px 4px var(--subscription-box-shadow));
-          filter: drop-shadow(0px 4px 4px var(--subscription-box-shadow));
-  background-color: var(--footer-backgraund);
-  outline: none;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--white-dominant-color);
-}
-.subscription__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 28px 10px 29px;
-}
-.subscription__icon {
-  margin-left: 10px;
-  fill: var(--white-dominant-color);
 }
 
 .works__filter-list {
