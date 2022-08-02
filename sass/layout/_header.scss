@@ -20,9 +20,13 @@
         padding-top: 16px;
         padding-bottom: 16px;
         color: var(--black-dominant-theme);
-        margin-right: 88px;
+        
+        @media (min-width: 768px) {
+        margin-right: 88px;  
+        }
 
-        @media screen and (min-width: 1200px) {
+        @media (min-width: 1200px) {
+            margin-right: 93px;
             font-size: 26px;
             line-height: 1.19;
         }

@@ -1,5 +1,9 @@
 .works {
 
+    &__cards-list {
+        display: none;
+    }
+
     &__cards-link {
        
         box-shadow: none;

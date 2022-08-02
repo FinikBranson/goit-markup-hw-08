@@ -58,19 +58,10 @@
     }
 
     &__btn {
-        display: flex;
-        align-items: center;
-        padding: 10px 28px 10px 29px;
-
-        @media (max-width: 1199px) {
-        margin: 0 auto;    
-        }
+        
 
     }
 
-    &__icon {
-        margin-left: 10px;
-        fill: var(--white-dominant-color);
-    }
+    
 
 }
