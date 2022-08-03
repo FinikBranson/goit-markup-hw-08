@@ -8,11 +8,14 @@
 }
 
 .modal {
+
+    @media (max-width: 1199px) {
+       width: 450px; 
+    }
     position: absolute;
     top: 50%;
     left: 50%;
     width: 528px;
-    height: 581px;
     padding: 40px;
     background-color: var(--white-dominant-color);
     box-shadow: 0px 1px 3px var(--card-set-box-shadow-first-layer), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -42,6 +45,10 @@
     }
     
     &__title {
+        @media (max-width: 1199px) {
+        line-height: 1.5;
+        }
+        
         margin-bottom: 12px;
         font-weight: 700;
         font-size: 20px;
@@ -108,10 +115,17 @@
     }
     
     &__checkbox-label {
+
+        @media (max-width: 1199px) {  
+        font-size: 12px;
+        line-height: 1.16;
+        }
+
         @extend %flex-centered;
-        width: 100%;
         margin-bottom: 30px;
+        width: 100%;
         line-height: 1.71;
+        color: var(--text-color);
     }
     
     &__checkbox-custom {
@@ -136,10 +150,14 @@
     }
     
     &__btn-submit {
+        @extend %button;
         display: flex;
         margin-left: auto;
         margin-right: auto;
         padding: 10px 55px;
+        line-height: 1.88;
+        color: var(--white-dominant-color);
+        background: var(--dominant-color);
     }
 }
 

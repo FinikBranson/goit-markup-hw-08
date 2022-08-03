@@ -223,7 +223,7 @@ a {
   font-size: 14px;
 }
 
-.subscription__btn, .works__filter-btn, .hero__btn {
+.modal__btn-submit, .subscription__btn, .works__filter-btn, .hero__btn {
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -528,7 +528,6 @@ a {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
   padding: 40px;
   background-color: var(--white-dominant-color);
   -webkit-box-shadow: 0px 1px 3px var(--card-set-box-shadow-first-layer), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px var(--backdrop-overlay-color);
@@ -540,6 +539,11 @@ a {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
 }
 .modal__btn-close {
   position: absolute;
@@ -563,6 +567,11 @@ a {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+}
+@media (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 .modal__comment-field-label, .modal__input-name-label, .modal__input-phone-label, .modal__input-mail-label {
   display: block;
@@ -606,9 +615,16 @@ a {
   fill: var(--dominant-color);
 }
 .modal__checkbox-label {
-  width: 100%;
   margin-bottom: 30px;
+  width: 100%;
   line-height: 1.71;
+  color: var(--text-color);
+}
+@media (max-width: 1199px) {
+  .modal__checkbox-label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 .modal__checkbox-custom {
   display: block;
@@ -635,6 +651,9 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 10px 55px;
+  line-height: 1.88;
+  color: var(--white-dominant-color);
+  background: var(--dominant-color);
 }
 
 .modal-icon {
