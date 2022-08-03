@@ -2,6 +2,8 @@
     border-bottom: 1px solid #ececec;
 
     &__container {
+        position: relative;    
+    
         @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
@@ -9,9 +11,11 @@
     }
     
     &__nav-inner {
+        @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        }
     }
 
     &__logo {
@@ -30,20 +34,6 @@
             font-size: 26px;
             line-height: 1.19;
         }
-    }
-    
-    &__button-menu {
-        padding: 10px 0;
-        fill: var(--black-dominant-theme);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        @media screen and (min-width: 768px) {
-        display: none;   
-        }
-    }
-
-    &__button-menu:hover {
-    fill: var(--dominant-color);
     }
 
     &__nav-list {
