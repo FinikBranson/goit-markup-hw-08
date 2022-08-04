@@ -11,11 +11,9 @@
     }
    
     &__contacts-socials-inner {
-        @media (min-width: 768px) and (max-width:1199px) {
-            margin-right: 89px;
+        @media (min-width: 768px) and (max-width:1199px) {  
             margin-bottom: 60px;
-            margin-left: 76px;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         
         @media (min-width: 768px) {

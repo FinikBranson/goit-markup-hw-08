@@ -132,7 +132,7 @@
     
     &__checkbox-custom {
         display: block;
-        width: 16px;
+        min-width: 16px;
         height: 15px;
         border: 2px solid var(--title-color);
         border-radius: 3px;
