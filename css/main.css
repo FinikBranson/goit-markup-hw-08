@@ -737,6 +737,11 @@ a {
 .menu__contacts-list {
   margin-bottom: 64px;
 }
+@media (max-width: 419px) {
+  .menu__contacts-list {
+    margin-bottom: 50px;
+  }
+}
 .menu__contacts-item:not(:last-child) {
   margin-bottom: 32px;
 }

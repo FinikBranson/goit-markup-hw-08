@@ -77,7 +77,11 @@
     }
 
     &__contacts-list {
+        @media (max-width: 419px) {
+        margin-bottom: 50px; 
+        }
         margin-bottom: 64px;
+
     }
 
     &__contacts-item:not(:last-child) {
